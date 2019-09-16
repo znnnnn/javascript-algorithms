@@ -4,6 +4,8 @@
  * @param {number} bitPosition - zero based.
  * @return {number}
  */
-export default function getBit(number, bitPosition = 0) {
-  return (number | (1 << bitPosition));
+export default function clearBit(number, bitPosition) {
+  const mask = ~(1 << bitPosition);
+
+  return number & mask;
 }
