@@ -5,5 +5,5 @@
  * @return {number}
  */
 export default function getBit(number, bitPosition = 0) {
-  return (number >> bitPosition) & 1;
+  return (number | (1 << bitPosition));
 }
