@@ -4,6 +4,6 @@
  * @param {number} bitPosition - zero based.
  * @return {number}
  */
-export default function isEven(number) {
-  return (number & 1) === 0;
+export default function multiplyByTwo(number) {
+  return number << 1
 }
