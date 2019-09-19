@@ -3,6 +3,10 @@
  * @param {number} number
  * @return {number}
  */
-export default function xor(numberA, numberB) {
-  return numberA ^ numberB
+export default function bitLength(number) {
+  let bitLenCount = 0
+  while ((1 << bitLenCount) <= number) {
+    bitLenCount += 1
+  }
+  return bitLenCount
 }
