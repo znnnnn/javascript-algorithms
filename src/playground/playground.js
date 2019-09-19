@@ -3,6 +3,6 @@
  * @param {number} number
  * @return {number}
  */
-export default function isPowerOfTwo(number) {
-  return (number & (number - 1)) === 0
+export default function factorial(number) {
+  return number > 1 ? factorial(number - 1) : 1
 }
