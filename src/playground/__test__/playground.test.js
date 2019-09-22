@@ -2,6 +2,6 @@ import test from '../playground';
 
 describe('playground', () => {
   it('should perform playground tasks', () => {
-    expect(test(4)).toBe(24);
+    expect(test(10)).toBe(55);
   });
 });

@@ -3,6 +3,11 @@
  * @param {number} number
  * @return {number}
  */
-export default function factorial(number) {
-  return number > 1 ? factorial(number - 1) : 1
+export default function fibonacci(number) {
+  if (number === 0) return 0
+  const list = [0, 1]
+  for (let i = 2; i <= number; i += 1) {
+    list.push(list[i - 1] + list[i - 2])
+  }
+  return list[number]
 }
