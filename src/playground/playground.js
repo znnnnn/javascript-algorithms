@@ -3,11 +3,11 @@
  * @param {number} number
  * @return {number}
  */
-export default function fibonacci(number) {
-  if (number === 0) return 0
-  const list = [0, 1]
-  for (let i = 2; i <= number; i += 1) {
-    list.push(list[i - 1] + list[i - 2])
+export default function isPrime(n) {
+  if (n > 1 && n <= 3) { return true }
+
+  for (let i = 2; i < Math.sqrt(n); i += 1) {
+    if (n % i === 0) { return false; }
   }
-  return list[number]
+  return true;
 }
